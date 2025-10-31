@@ -1,0 +1,311 @@
+#footer {
+    background-color: #52332B;
+}
+
+footer {
+    background-color: #412720;
+}
+
+
+#features {
+    background-color: #F7F5F1;
+    height: auto;
+}
+
+/* #feature-card-row {
+    margin-bottom: 65vh;
+} */
+
+
+#bean-bag {
+    animation-name: b-bag;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes b-bag {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 100px);
+    }
+}
+
+
+#heroSection {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/service-details.jpg');
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.breadcrumb {
+    --bs-breadcrumb-divider: '|';
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: white !important;
+    opacity: 1;
+}
+
+.icon {
+    background-color: white;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+
+.footer-icon {
+    background-color: #52332B;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-icon {
+    background-color: #3F271E;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#online-shop,
+#newsletter {
+    background-color: #F7F5F1;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #3F271E;
+    border-radius: 50%;
+    color: #3F271E;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #3F271E;
+    color: white;
+}
+
+.category:hover p {
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-wrap: wrap;
+}
+
+.tags {
+    cursor: pointer;
+}
+
+#portfolio {
+    height: auto;
+    padding-bottom: 2px;
+}
+
+.portfolio-images {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.portfolio-images img {
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(63, 39, 30, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.overlay-black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+.plus {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+
+
+.portfolio-images:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-images:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio-images:hover .plus {
+    transform: scale(1);
+    background-color: rgba(63, 39, 30, 1);
+}
+
+.team-social-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .team-social-overlay {
+    opacity: 1;
+}
+
+.team-social-icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: #3F271E;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.blog {
+    overflow: hidden;
+}
+
+.blog img {
+    transition: transform 0.4s ease;
+    height: 100%;
+    overflow: hidden;
+}
+
+#blog .card:hover img {
+    transform: scale(1.2);
+}
+
+#contact-us {
+    background-color: #3F271E;
+    height: 65vh;
+    position: relative;
+    /* margin-top: -50%; */
+    /* pulls it upward, adjust value as needed */
+    /* z-index: 10; */
+    position: absolute;
+    top: 0%;
+}
+
+.contact-section {
+    height: 130vh;
+}
+
+.booking-form.form-control,
+.booking-form.form-select {
+    background-color: #311D15;
+    border: none;
+    color: #926D63;
+    border-radius: 10px;
+    padding: 12px 15px;
+}
+
+.booking-form.form-control::placeholder {
+    color: #926D63;
+}
+
+.booking-form.form-control:focus,
+.booking-form.form-select:focus {
+    box-shadow: none;
+    outline: none;
+    background-color: #311D15;
+    color: #fff;
+}
+
+.btn-book {
+    color: #3b1f14;
+    background-color: white;
+}
+
+.btn-book:hover {
+    color: #3b1f14;
+    background-color: white;
+}
+
+.booking-coffee {
+    position: absolute;
+    top: 90%;
+    right: 80%;
+    height: 20%;
+    width: 25%
+}
+.blogDetails-form input::placeholder{
+    font-size: 0.8rem
+}
+
+@media only screen and (min-width:1200px) {
+    .feature-cards {
+        width: 20%;
+    }
+
+    #feature-card-row {
+        margin-bottom: 35vh;
+    }
+
+    .contact-section {
+        height: 32.5vh;
+    }
+
+    #contact-us {
+        background-color: #3F271E;
+        height: 65vh;
+        position: absolute;
+        top: -100%;
+    }
+
+}

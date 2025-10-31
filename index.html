@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bruin - Coffee Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #blank {
+            height: 30vh
+        }
+
+        #menu {
+            margin-top: 25%;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <section class="container-fluid px-0" id="mainwrapper">
+        <!-- Header Section -->
+        <section class="container-fluid px-0 fixed-top" id="header" style="background-color:rgba(0,0,0,0.7)">
+            <section class="container px-0">
+                <nav class="navbar navbar-expand-lg navbar-dark px-5 py-2">
+                    <div class="container-fluid">
+                        <div class="container d-flex justify-content-between">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="./images/header-logo.png" alt="Bruin" class="img-fluid">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="menu.html">Menu</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="services.html" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0">
+                                        <li><a class="dropdown-item border-bottom py-2"
+                                                href="services.html">Services</a></li>
+                                        <li><a class="dropdown-item border-bottom py-2"
+                                                href="servicesDetails.html">Services Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0">
+                                        <li><a class="dropdown-item border-bottom py-2" href="gallery">Gallery</a></li>
+                                        <li><a class="dropdown-item border-bottom py-2" href="#">Faq</a></li>
+                                        <li><a class="dropdown-item border-bottom py-2" href="team.html">Team</a></li>
+                                        <li><a class="dropdown-item border-bottom py-2" href="shop.html">Shop</a></li>
+                                        <li><a class="dropdown-item border-bottom py-2" href="#">Shop Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="blog.html" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Blog
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0">
+                                        <li><a class="dropdown-item border-bottom py-2" href="blog.html">Blog</a></li>
+                                        <li><a class="dropdown-item border-bottom py-2" href="blogDetails.html">Blog
+                                                Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="contact-us.html">Contact</a>
+                                </li>
+                            </ul>
+
+                            <!-- <span class="navbar-text text-light px-5 rounded-1 d-flex" style="background-color: #6F3727;">
+                                BOOK A TABLE
+                            </span> -->
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </section>
+        <!-- End of Header Section -->
+
+        <!-- Hero Section -->
+        <section class="container-fluid" id="hero">
+            <section class="row">
+                <div class="col-12 p-0">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active position-relative">
+                                <img src="./images/slider-1.png" class="d-block w-100 h-100" alt="...">
+                                <div class="overlay-black"></div>
+                                <div class="row d-none d-xl-flex">
+                                    <div class="carousel-caption d-md-block text-start ps-5 col-6"
+                                        style="width: 50%; bottom: 20%;left:10%">
+                                        <h4 class="fs-6">WELCOME TO BRUIN COFFEE</h4>
+                                        <h1 class="fs-1">Enjoy Your Morning Coffee Shot</h1>
+                                        <p>Donec vitae libero non enim placerat eleifend aliquam erat volutpat.
+                                            Curabitur
+                                            diam ex, dapibus purus sapien, cursus sed nisl tristique, commodo gravida
+                                            lectus
+                                            non.
+                                        </p>
+                                        <div class="row">
+                                            <button class="col-5 btn rounded text-light px-4 py-3 mx-4"
+                                                style="background-color: #6F3727;">BOOK A TABLE</button>
+                                            <button class="col-5 btn rounded  px-4 py-3"
+                                                style="background-color: #FFFFFF; color:#6F3727">VISIT OUR SHOP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item position-relative">
+                                <img src="./images/slider-2.jpg" class="d-block w-100" alt="...">
+                                <div class="overlay-black"></div>
+                                <div class="row d-none d-xl-flex">
+                                    <div class="carousel-caption d-flex d-md-block text-start ps-5"
+                                        style="width: 50%; bottom: 20%;left:10%">
+                                        <h4>WELCOME TO BRUIN COFFEE</h4>
+                                        <h1 style="font-size:4rem">Enjoy Your Morning Coffee Shot</h1>
+                                        <p>Donec vitae libero non enim placerat eleifend aliquam erat volutpat.
+                                            Curabitur
+                                            diam ex, dapibus purus sapien, cursus sed nisl tristique, commodo gravida
+                                            lectus
+                                            non.
+                                        </p>
+                                        <button class="btn rounded text-light px-4 py-3 mx-4"
+                                            style="background-color: #6F3727;">BOOK A TABLE</button>
+                                        <button class="btn rounded  px-4 py-3"
+                                            style="background-color: #FFFFFF; color:#6F3727">VISIT OUR SHOP</button>
+                                    </div>
+                                </div>
+                                <div class="row d-flex d-xl-none">
+                                    <h1 class="text-light p-5">Welcome to Bruin Coffee</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- End of Hero Section -->
+
+        <!-- Section companies -->
+        <section class="container-fluid p-0" style="background-color: #3F271E;">
+            <section class="container">
+                <section class="row py-5 d-flex justify-content-center">
+                    <div class="col-3">
+                        <img src="./images/s-logo-1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/s-logo-2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/s-logo-3.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/s-logo-4.png" alt="" class="img-fluid">
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!-- End of Companies section -->
+
+
+        <!-- About Section -->
+        <section class="container-fluid py-5">
+            <section class="container-fluid py-5">
+                <section class="row g-3">
+                    <div class="col-12 col-xl-6 d-flex justify-content-center align-items-center">
+                        <div class="position-relative d-inline-block">
+                            <img src="./images/about_01.png" alt="Lady drinking coffee" class="img-fluid rounded">
+                            <img src="./images/about_02.png" alt="Cup" class="me-3 mb-3 img-fluid"
+                                style="position: absolute;top:75%;left:50%">
+                        </div>
+                    </div>
+                    <div class="container col-12 col-xl-6 position-relative">
+                        <div class="row p-5 me-5">
+                            <div class="col-12 d-flex align-items-center">
+                                <img src="./images/beans.png" alt="" class="img-fluid">
+                                <h4 class="ms-2" style="color:#3F271E">ABOUT US</h4>
+                            </div>
+                            <div class="col-12">
+                                <h1 class="text-dark" style="font-size: 4em;">Would You Like Delicious Coffee</h1>
+                                <p class="text-body-secondary">
+                                    Morbi tortor urna, placerat vel arcu quis, fringilla
+                                    egestas neque. Morbi sit amet
+                                    porta erat, quis rutrum risus. Vivamus et gravida nibh, quis posuere felis. In
+                                    commodo mi lectus, Integer ligula lorem, finibus vitae lorem vitae tincidunt dolor
+                                    consequat quis.
+                                </p>
+                                <p class="text-body-secondary">
+                                    Cras finibus laoreet felis et hendrerit. Integer ligula lorem, finibus vitae lorem
+                                    at, egestas consectetur urna. Integer id ultricies elit. Maecenas sodales nibh, quis
+                                    posuere felis. In commodo mi lectus venenatis metus eget fringilla. Suspendisse
+                                    varius ante eget lorem tempus blandit. Aenean eu vulputate lorem, quis auctor
+                                    lectus.
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="row d-flex align-items-center justify-content-between">
+                                    <div class="col-4 py-5 px-2">
+                                        <div class="col-12">
+                                            <img src="./images/about_sign.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col-12">
+                                            <h4 class="text-black">Vincent Smith</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <button class="btn rounded-4 p-3 text-white d-flex justify-content-center"
+                                            style="background-color: #3F271E; ">DISCOVER MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./images/about_bean_bag.png" alt="" class="img-fluid" id="bean-bag"
+                            style="position: absolute;top:15%;right:0%">
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!-- End of About Section -->
+
+
+
+        <!-- Our Features Section -->
+        <section class="container-fluid py-5 mt-5 d-block align-items-start position relative" id="features">
+            <section class="container-fluid py-5  position-relative d-inline-block z-0">
+                <div class="col-12 text-center d-inline-block position-relative z-2">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <img src="./images/beans.png" alt="" class="img-fluid">
+                        <h4 class="ms-2" style="color:#3F271E">OUR FEATURES</h4>
+                    </div>
+                    <h1 style="font-size: 4em;">What We Provide You</h1>
+                    <div class="d-flex align-items-center justify-content-center px-5">
+                        <p class="m-4 col-10 text-body-secondary">Proin consectetur non dolor vitae pulvinar.
+                            Pellentesque sollicitudin dolor eget neque
+                            viverra, sed interdum metus interdum. Cras lobortis pulvinar dolor, sit amet ullamcorper
+                            dolor iaculis vel</p>
+                    </div>
+                    <div class="container mt-5">
+                        <div class="row d-flex justify-content-center g-2" id="feature-card-row">
+                            <div class="col-8 col-md-5 col-xl-3 m-4 shadow p-4 text-start feature-cards"
+                                style="background-color: white;">
+                                <img src="./images/feature-1.png" alt="" class=" col-2  mb-3 img-fluid">
+                                <h4 class="fw-semibold" style="color: #3F271E;">High Quality Coffee </h4>
+                                <p class="text-body-secondary mb-3">
+                                    Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc
+                                    sit
+                                    amet.
+                                </p>
+                                <h5 style="color: #3F271E;">Read More -></h5>
+                            </div>
+                            <div class="col-8 col-md-5 col-xl-3 m-4 shadow p-4 text-start feature-cards"
+                                style="background-color: white; ">
+                                <img src="./images/feature-2.png" alt="" class=" col-2  mb-3 img-fluid">
+                                <h4 class="fw-semibold" style="color: #3F271E;">Barista Coffee Shops </h4>
+                                <p class="text-body-secondary mb-3">
+                                    Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc
+                                    sit
+                                    amet.
+                                </p>
+                                <h5 style="color: #3F271E;">Read More -></h5>
+                            </div>
+                            <div class="col-8 col-md-5 col-xl-3 m-4 shadow p-4 text-start feature-cards"
+                                style="background-color: white;">
+                                <img src="./images/feature-3.png" alt="" class=" col-2  mb-3 img-fluid">
+                                <h4 class="fw-semibold" style="color: #3F271E;">Coffee Shop Online</h4>
+                                <p class="text-body-secondary mb-3">
+                                    Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc
+                                    sit
+                                    amet.
+                                </p>
+                                <h5 style="color: #3F271E;">Read More -></h5>
+                            </div>
+
+                            <div class="col-8 col-md-5 col-xl-2 m-4 shadow p-4 text-start feature-cards"
+                                style="background-color: white;">
+                                <img src="./images/feature-4.png" alt="" class=" col-2  mb-3 img-fluid">
+                                <h4 class="fw-semibold" style="color: #3F271E;">Best Coffee Machines</h4>
+                                <p class="text-body-secondary mb-3">
+                                    Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc
+                                    sit
+                                    amet.
+                                </p>
+                                <h5 style="color: #3F271E;">Read More -></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/feature-anim.png" alt="" class="img-fluid z-1" id="bean-bag"
+                    style="position: absolute;top:15%;left:0%">
+            </section>
+        </section>
+        <!-- End of Our Features Section -->
+        <!-- Contact us Section -->
+        <section class="container-fluid bg-white mb-5 position-relative d-flex justify-content-center contact-section">
+            <section class="container z-1" id="contact-us">
+                <div class="row  position-relative" style="height: 100%;">
+                    <div class="col-12 col-xl-6 overflow-scroll" style="height: 100%;">
+                        <div class="col-12 text-start ms-5 py-5" style="height: 100%;">
+                            <div class="col-12 d-flex align-items-center justify-content-start">
+                                <img src="./images/white-beans.png" alt="" class="img-fluid">
+                                <h5 class="ms-2 text-light">OUR ONLINE SHOP</h5>
+                            </div>
+                            <h2 class="text-light" style="font-size: 3rem;">Book Your Table Now !</h2>
+
+                            <div class="booking-form p-5 me-5">
+                                <form>
+                                    <div class="row g-4 d-flex justify-content-center">
+                                        <div class="col-12">
+                                            <input type="text" class="form-control py-3" placeholder="First Name">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="email" class="form-control py-3" placeholder="Email">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="tel" class="form-control py-3" placeholder="Phone No.">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="date" class="form-control py-3">
+                                        </div>
+                                        <div class="col-6">
+                                            <select class="form-select py-3">
+                                                <option selected>Time</option>
+                                                <option>9:30 PM</option>
+                                                <option>10:30 PM</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-book w-100 py-3">BOOK TABLE
+                                                NOW</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 px-0">
+                        <img src="./images/contact-us.png" alt="" class="w-100" style="height: 65vh;">
+                    </div>
+                    <img src="./images/booking-img-2.png" alt="" class="booking-coffee img-fluid">
+                </div>
+            </section>
+        </section>
+        <!-- End of Contact us Section -->
+
+        <!-- Menu Section -->
+        <section class="container-fluid py-5 my-0" id="menu">
+            <section class="container-fluid d-flex justify-content-center position-relative my-5 p-5">
+                <section class="row">
+                    <div class="col-12 text-center">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <img src="./images/beans.png" alt="" class="img-fluid">
+                            <h4 class="ms-2" style="color:#3F271E">OUR MENU</h4>
+                        </div>
+                        <h1 style="font-size: 4em;">What We Have In Here</h1>
+                        <p class="text-body-secondary">Proin consectetur non dolor vitae pulvinar. Pellentesque
+                            sollicitudin dolor eget neque viverra,
+                            sed interdum metus interdum. Cras lobortis pulvinar dolor, sit amet ullamcorper dolor
+                            iaculis
+                            vel
+                        </p>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12 col-xl-5 px-5">
+                                <div class="row my-5">
+                                    <div class="col-2">
+                                        <img src="./images/menu1.jpg" alt="" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-10 text-start">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Coffe Latte</h4>
+                                            <h4>----------&nbsp;$12.90</h4>
+                                        </div>
+                                        <p class="text-body-secondary">Espresso and Light Layer of Crema</p>
+                                    </div>
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col-2">
+                                        <img src="./images/menu2.jpg" alt="" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-10 text-start">
+                                        <div class="d-flex justify-content-between">
+                                            <h4> Macchiato</h4>
+                                            <h4>----------&nbsp;$12.90</h4>
+                                        </div>
+                                        <p class="text-body-secondary">Espresso and Light Layer of Crema</p>
+                                    </div>
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col-2">
+                                        <img src="./images/menu3.jpg" alt="" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-10 text-start">
+                                        <div class="d-flex justify-content-between">
+                                            <h4> Cappucino</h4>
+                                            <h4>----------&nbsp;$12.90</h4>
+                                        </div>
+                                        <p class="text-body-secondary">Espresso and Light Layer of Crema</p>
+                                    </div>
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col-2">
+                                        <img src="./images/menu4.jpg" alt="" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-10 text-start">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Chocolate Mocha</h4>
+                                            <h4>----------&nbsp;$12.90</h4>
+                                        </div>
+                                        <p class="text-body-secondary">Espresso and Light Layer of Crema</p>
+                                    </div>
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col-2">
+                                        <img src="./images/menu5.jpg" alt="" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-10 text-start">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Iced Latte</h4>
+                                            <h4>----------&nbsp;$12.90</h4>
+                                        </div>
+                                        <p class="text-body-secondary">Espresso and Light Layer of Crema</p>
+                                    </div>
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col-2">
+                                        <img src="./images/menu6.jpg" alt="" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-10 text-start">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Caramel Latte</h4>
+                                            <h4>----------&nbsp;$12.90</h4>
+                                        </div>
+                                        <p class="text-body-secondary">Espresso and Light Layer of Crema</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-5 px-5">
+                                <div class="row my-5">
+                                    <div class="col-2">
+                                        <img src="./images/menu7.jpg" alt="" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-10 text-start">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Coffe Americano</h4>
+                                            <h4>----------&nbsp;$12.90</h4>
+                                        </div>
+                                        <p class="text-body-secondary">Espresso and Light Layer of Crema</p>
+                                    </div>
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col-2">
+                                        <img src="./images/menu8.jpg" alt="" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-10 text-start">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Coffe Mocha</h4>
+                                            <h4>----------&nbsp;$12.90</h4>
+                                        </div>
+                                        <p class="text-body-secondary">Espresso and Light Layer of Crema</p>
+                                    </div>
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col-2">
+                                        <img src="./images/menu9.jpg" alt="" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-10 text-start">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Iced Coffe</h4>
+                                            <h4>----------&nbsp;$12.90</h4>
+                                        </div>
+                                        <p class="text-body-secondary">Espresso and Light Layer of Crema</p>
+                                    </div>
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col-2">
+                                        <img src="./images/menu10.jpg" alt="" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-10 text-start">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Vanilla Latte</h4>
+                                            <h4>----------&nbsp;$12.90</h4>
+                                        </div>
+                                        <p class="text-body-secondary">Espresso and Light Layer of Crema</p>
+                                    </div>
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col-2">
+                                        <img src="./images/menu2.jpg" alt="" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-10 text-start">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Espresso</h4>
+                                            <h4>----------&nbsp;$12.90</h4>
+                                        </div>
+                                        <p class="text-body-secondary">Espresso and Light Layer of Crema</p>
+                                    </div>
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col-2">
+                                        <img src="./images/menu4.jpg" alt="" class="w-100 h-100">
+                                    </div>
+                                    <div class="col-10 text-start">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Cortado</h4>
+                                            <h4>----------&nbsp;$12.90</h4>
+                                        </div>
+                                        <p class="text-body-secondary">Espresso and Light Layer of Crema</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn rounded-3 px-5 py-3 mb-5 text-light"
+                                    style="background-color: #3F271E;">
+                                    Discover More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <img src="./images/mocha.png" alt="" class="img-fluid z-0" id="bean-bag"
+                    style="position: absolute;top:15%;right:0%">
+            </section>
+
+        </section>
+        <!-- End of Menu Section -->
+
+
+        <!-- Online Shop Section -->
+        <section class="container-fluid py-5" id="online-shop">
+            <section class="container py-5 my-5 position-relative d-flex justify-content-center">
+                <section class="row z-1">
+                    <div class="col-12 text-center">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <img src="./images/beans.png" alt="" class="img-fluid">
+                            <h4 class="ms-2" style="color:#3F271E">OUR ONLINE SHOP</h4>
+                        </div>
+                        <h1 style="font-size: 4em;">Buy Our Featured Products</h1>
+                        <p class="text-body-secondary m-5">Proin consectetur non dolor vitae pulvinar. Pellentesque
+                            sollicitudin dolor eget neque viverra, sed interdum metus interdum. Cras lobortis pulvinar
+                            dolor, sit amet ullamcorper dolor iaculis vel
+                        </p>
+                        <div class="row d-flex justify-content-center m-5 py-5">
+                            <div class="col-12 col-md-5 col-xl-3 mb-4 d-flex justify-content-center">
+                                <div class="card rounded-0 border border-0 shadow-lg" style="width: 18rem;">
+                                    <img src="./images/menu1.jpg" class="card-img-top img-fluid rounded-0" alt="...">
+                                    <div class="card-body d-inline">
+                                        <h4 class="card-text"><span
+                                                class="text-body-tertiary text-decoration-line-through">$20</span>
+                                            <span class="text-dark">&nbsp;$15</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 col-xl-3 mb-4 d-flex justify-content-center">
+                                <div class="card rounded-0 border border-0 shadow-lg" style="width: 18rem;">
+                                    <img src="./images/menu7.jpg" class="card-img-top img-fluid rounded-0" alt="...">
+                                    <div class="card-body d-inline">
+                                        <h4 class="card-text"><span
+                                                class="text-body-tertiary text-decoration-line-through">$20</span>
+                                            <span class="text-dark">&nbsp;$15</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 col-xl-3 mb-4 d-flex justify-content-center">
+                                <div class="card rounded-0 border border-0 shadow-lg" style="width: 18rem;">
+                                    <img src="./images/menu2.jpg" class="card-img-top img-fluid rounded-0" alt="...">
+                                    <div class="card-body d-inline">
+                                        <h4 class="card-text"><span
+                                                class="text-body-tertiary text-decoration-line-through">$20</span>
+                                            <span class="text-dark">&nbsp;$15</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 col-xl-3 mb-4 d-flex justify-content-center">
+                                <div class="card rounded-0 border border-0 shadow-lg" style="width: 18rem;">
+                                    <img src="./images/menu8.jpg" class="card-img-top img-fluid rounded-0" alt="...">
+                                    <div class="card-body d-inline">
+                                        <h4 class="card-text"><span
+                                                class="text-body-tertiary text-decoration-line-through">$20</span>
+                                            <span class="text-dark">&nbsp;$15</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <img src="./images/mocha.png" alt="" class="img-fluid z-0" id="bean-bag"
+                    style="position: absolute;top:15%;left:-7%">
+            </section>
+        </section>
+        <!-- End of Online Shop Section -->
+
+        <!-- Clients -->
+        <section class="container-fluid py-5">
+            <section class="container p-5">
+                <div class="col-12 text-center">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <img src="./images/beans.png" alt="" class="img-fluid">
+                        <h4 class="ms-2" style="color:#3F271E">OUR ONLINE SHOP</h4>
+                    </div>
+                    <h1 style="font-size: 4em;">What Our Clients Says</h1>
+                    <div class="col-12 d-flex justify-content-center my-5">
+                        <p class="text-body-secondary mb-5 col-6">Proin consectetur non dolor vitae pulvinar.
+                            Pellentesque
+                            sollicitudin dolor eget neque viverra, sed interdum metus interdum. Cras lobortis pulvinar
+                            dolor, sit amet ullamcorper dolor iaculis vel
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-10 col-xl-5 m-2 border border-1">
+                                <div class="row">
+                                    <div class="col-12 px-5 pt-5">
+                                        <div class="col-12 d-flex justify-content-between">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="./images/client-img-1.png" alt=""
+                                                        class="img-fluid w-100 rounded-circle">
+                                                </div>
+                                                <div class="col-8 text-start">
+                                                    <h4 style="color:#412720">Jina Nelson</h4>
+                                                    <p style="color:#412720">Client</p>
+                                                </div>
+                                            </div>
+                                            <img src="./images/qoute.png" alt="" class="img-fluid h-75">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-start px-5">
+                                        <img src="./images/5-star.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-12 text-start">
+                                        <p class="text-body-secondary p-4">“Phasellus aliquam quis lorem amet dapibus
+                                            feugiat vitae purus vitae efficitur.
+                                            Vestibulum sed elit id orci rhoncus ultricies. Morbi vitae semper consequat
+                                            ipsum semper quam”.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10 col-xl-5 m-2 border border-1">
+                                <div class="row">
+                                    <div class="col-12 px-5 pt-5">
+                                        <div class="col-12 d-flex justify-content-between">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="./images/client-img-2.png" alt=""
+                                                        class="img-fluid w-100 rounded-circle">
+                                                </div>
+                                                <div class="col-8 text-start">
+                                                    <h4 style="color:#412720">Jina Nelson</h4>
+                                                    <p style="color:#412720">Client</p>
+                                                </div>
+                                            </div>
+                                            <img src="./images/qoute.png" alt="" class="img-fluid h-75">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-start px-5">
+                                        <img src="./images/5-star.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-12 text-start">
+                                        <p class="text-body-secondary p-4">“Phasellus aliquam quis lorem amet dapibus
+                                            feugiat vitae purus vitae efficitur.
+                                            Vestibulum sed elit id orci rhoncus ultricies. Morbi vitae semper consequat
+                                            ipsum semper quam”.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center pt-5">
+                                <div class="row">
+                                    <div class="m-2" style="height: 10px;width: 5px;background-color: #3F271E;"></div>
+                                    <div class="m-2"
+                                        style="height: 10px;width: 5px;background-color: white; border: 1px solid #3F271E">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+        </section>
+        <!-- End of Clients -->
+
+
+        <!-- Offer -->
+        <section class="container-fluid" style="background-color: #3F271E;">
+            <section class="row">
+                <div class="col-12 col-xl-6 position-relative d-inline-block">
+                    <div class="row ps-5">
+                        <div class="col-12 text-start p-5">
+                            <div class="col-12 d-flex align-items-center ps-5">
+                                <img src="./images/white-beans.png" alt="" class="img-fluid">
+                                <h4 class="ms-2 text-light">COFFEE WE USE</h4>
+                            </div>
+                            <h1 class="text-light ps-5" style="font-size: 4em;">We Offer Wide Selection of Coffee</h1>
+                            <div class="col-12 my-5">
+                                <p class="text-light mb-5 ps-5">
+                                    Vestibulum non ornare nunc. Maecenas a metus in est iaculis pretium. Aliquam
+                                    ullamcorper nibh lacus, ac suscipit ipsum consequat porttitor.
+                                </p>
+                            </div>
+                            <div class="ps-5 m-2">
+                                <h5 class="text-light">Quality Production</h5>
+                                <div class="progress rounded-0 mb-5" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                    style="background-color: grey;">
+                                    <div class="progress-bar text-dark" style="width: 80%;background-color: white;">80%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ps-5 m-2">
+                                <h5 class="text-light">Maintenance Services</h5>
+                                <div class="progress rounded-0 mb-5" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                    style="background-color: grey;">
+                                    <div class="progress-bar text-dark" style="width: 90%;background-color: white;">90%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ps-5 m-2">
+                                <h5 class="text-light">Product Managment</h5>
+                                <div class="progress rounded-0 mb-5" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                    style="background-color: grey;">
+                                    <div class="progress-bar text-dark" style="width: 70%;background-color: white;">70%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/offer-anim.png" alt="" class="img-fluid z-0" id="bean-bag"
+                        style="position: absolute;top:10%;left:0%">
+                </div>
+                <div class="col-12 col-xl-6 px-0">
+                    <img src="./images/offer.png" alt="" class="w-100 h-100">
+                </div>
+            </section>
+        </section>
+        <!-- End of Offer -->
+
+
+        <!-- Blog Section -->
+        <section class="container-fluid px-0 py-5" id="blog">
+            <section class="container-fluid py-5 position-relative">
+                <div class="col-12 text-center">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <img src="./images/beans.png" alt="" class="img-fluid">
+                        <h4 class="ms-2" style="color:#3F271E">OUR BLOGS</h4>
+                    </div>
+                    <h1 style="font-size: 4em;">Latest Blog & News</h1>
+                    <div class="col-12 d-flex justify-content-center">
+                        <p class="text-body-secondary col-8">Proin consectetur non dolor vitae pulvinar.
+                            Pellentesque
+                            sollicitudin dolor eget neque viverra, sed interdum metus interdum. Cras lobortis
+                            pulvinar
+                            dolor, sit amet ullamcorper dolor iaculis vel
+                        </p>
+                    </div>
+                    <div class="row d-flex justify-content-center g-3">
+                        <div class="card rounded-0 p-0 col-8 col-md-5 col-xl-3 m-4 position-relative">
+                            <div class="blog">
+                                <img src="./images/blog-1.jpg" class="card-img-top rounded-0" alt="...">
+                            </div>
+                            <div class="text-light"
+                                style="background-color: #3F271E; position: relative;bottom: 5%; width:50%; margin-left: 25px; padding-top: 0.5em;">
+                                <p>24th March 2022</p>
+                            </div>
+                            <div class="card-body text-start">
+                                <h5 class="card-title text-dark">Cras accumsan nulla nec lacus ultricies placerat.
+                                </h5>
+                                <p class="card-text text-body-secondary">Curabitur sagittis libero tincidunt tempor
+                                    finibus. Mauris at
+                                    dignissim ligula, nec tristique orci.</p>
+                                <a href="#" class="btn pb-2 px-0 pe-3 rounded-0"
+                                    style="border-bottom: 3px solid #3F271E">Read More</a>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 p-0 col-8 col-md-5 col-xl-3 m-4 position-relative">
+                            <div class="blog">
+                                <img src="./images/blog-2.jpg" class="card-img-top rounded-0" alt="...">
+                            </div>
+                            <div class="text-light"
+                                style="background-color: #3F271E; position: relative;bottom: 5%; width:50%; margin-left: 25px; padding-top: 0.5em;">
+                                <p>24th March 2022</p>
+                            </div>
+                            <div class="card-body text-start">
+                                <h5 class="card-title text-dark">Cras accumsan nulla nec lacus ultricies placerat.
+                                </h5>
+                                <p class="card-text text-body-secondary">Curabitur sagittis libero tincidunt tempor
+                                    finibus. Mauris at
+                                    dignissim ligula, nec tristique orci.</p>
+                                <a href="#" class="btn pb-2 px-0 pe-3 rounded-0"
+                                    style="border-bottom: 3px solid #3F271E">Read More</a>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 p-0 col-8 col-md-5 col-xl-3 m-4 position-relative">
+                            <div class="blog">
+                                <img src="./images/blog-3.jpg" class="card-img-top rounded-0" alt="...">
+                            </div>
+                            <div class="text-light"
+                                style="background-color: #3F271E; position: relative;bottom: 5%; width:50%; margin-left: 25px; padding-top: 0.5em;">
+                                <p>24th March 2022</p>
+                            </div>
+                            <div class="card-body text-start">
+                                <h5 class="card-title text-dark">Cras accumsan nulla nec lacus ultricies placerat.
+                                </h5>
+                                <p class="card-text text-body-secondary">Curabitur sagittis libero tincidunt tempor
+                                    finibus. Mauris at
+                                    dignissim ligula, nec tristique orci.</p>
+                                <a href="#" class="btn pb-2 px-0 pe-3 rounded-0"
+                                    style="border-bottom: 3px solid #3F271E">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/feature-anim.png" alt="" class="img-fluid z-0" id="bean-bag"
+                        style="position: absolute;top:10%;right:0%">
+                </div>
+            </section>
+        </section>
+        <!-- End of Blog Section -->
+
+
+        <!-- News Letter Section -->
+        <section class="container-fluid py-5" id="newsletter">
+            <section class="container-fluid d-flex justify-content-center p-5 position-relative">
+                <div class="col-12 text-center">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <img src="./images/beans.png" alt="" class="img-fluid">
+                        <h4 class="ms-2" style="color:#3F271E">NEWSLETTER</h4>
+                    </div>
+                    <h1 style="font-size: 4em;">Get Best Offers On The Coffee</h1>
+                    <p class="text-body-secondary mb-5">With the subscription, enjoy your favourite coffees without
+                        having to think about it
+                    </p>
+                    <div class="col-12 pt-5 d-flex justify-content-center">
+                        <div class="input-group mb-3 w-50">
+                            <input type="text" class="form-control" placeholder="Your Email Address"
+                                aria-label="Recipient’s username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-none text-light py-3 rounded-3" type="button"
+                                id="button-addon2" style="background-color:#3F271E">Subscribe Now</button>
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/newsletter-anim.png" alt="" class="img-fluid z-0" id="bean-bag"
+                    style="position: absolute;top:10%;left:0%">
+            </section>
+        </section>
+        <!-- End of Newsletter Section -->
+
+        <!-- Portfolio Images -->
+        <section class="container-fluid p-0" id="portfolio">
+            <div class="row g-0">
+                <div class="col-12 col-md-6 portfolio-images">
+                    <img src="./images/protfolio-img01.png" alt="" class="w-100 h-100">
+                    <div class="overlay">
+                        <span class="plus px-2 pb-1">+</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 portfolio-images">
+                    <img src="./images/protfolio-img02.png" alt="" class="w-100 h-100">
+                    <div class="overlay">
+                        <span class="plus px-2 pb-1">+</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 portfolio-images">
+                    <img src="./images/protfolio-img03.png" alt="" class="w-100 h-100">
+                    <div class="overlay">
+                        <span class="plus px-2 pb-1">+</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 portfolio-images">
+                    <img src="./images/protfolio-img04.png" alt="" class="w-100 h-100">
+                    <div class="overlay">
+                        <span class="plus px-2 pb-1">+</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 portfolio-images">
+                    <img src="./images/protfolio-img05.png" alt="" class="w-100 h-100">
+                    <div class="overlay">
+                        <span class="plus px-2 pb-1">+</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer Section -->
+        <section class="container-fluid pt-5 px-0" id="footer">
+            <section class="container p-5">
+                <section class="row g-4">
+                    <div class="col-12 col-xl-7">
+                        <div class="row gx-3 d-flex justify-content-between mb-5">
+                            <div class="col-6">
+                                <img src="./images/header-logo.png" alt="" class="img-fluid">
+                                <div class="row pt-5 d-flex justify-content-start align-items-center">
+                                    <div class="icon col-2 d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-phone" style="color: #3F271E; size: 1em;"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="text-light my-0" style="font-size: 0.8em;">1800-121-3637</p>
+                                        <p class="text-light my-0" style="font-size: 0.8em;">+91-7052-101-786</p>
+                                    </div>
+
+                                </div>
+                                <div class="row pt-4 d-flex justify-content-start align-items-center">
+                                    <div class="icon col-2 d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-envelope" style="color: #3F271E; size: 1em;"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="text-light my-0" style="font-size: 0.8em;">info@example.com</p>
+                                        <p class="text-light my-0" style="font-size: 0.8em;">help@example.com</p>
+                                    </div>
+
+                                </div>
+                                <div class="row pt-4 d-flex justify-content-start align-items-center">
+                                    <div class="icon col-2 d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-location-dot" style="color: #3F271E; size: 1em;"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="text-light my-0" style="font-size: 0.8em;">1247/Plot No. 39, 15th
+                                            Phase
+                                        </p>
+                                        <p class="text-light my-0" style="font-size: 0.8em;">LHB Colony, Kanpur</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <h4 class="text-light fw-bold">Our Links</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mt-5"><a class="text-decoration-none text-light"
+                                            href="index.html">Home</a></li>
+                                    <li class="mt-2"><a class="text-decoration-none text-light" href="about.html">About
+                                            Us</a>
+                                    </li>
+                                    <li class="mt-2"><a class="text-decoration-none text-light"
+                                            href="services.html">Services</a>
+                                    </li>
+                                    <li class="mt-2"><a class="text-decoration-none text-light"
+                                            href="contact-us.html">Contact Us</a>
+                                    </li>
+                                    <li class="mt-2"><a class="text-decoration-none text-light"
+                                            href="blog.html">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-5">
+                        <h4 class="text-light fw-bold">Our Shop Location</h4>
+                        <div class="col-10">
+                            <iframe class="h-75 pt-5 w-100"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d851146.9309473292!2d-111.884837!3d33.558762!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b743829374b03%3A0xabaac255b1e43fbe!2sPlexus%20Worldwide!5e0!3m2!1sen!2sin!4v1761736618243!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <footer class="container-fluid fixed bottom-0 mx-0 p-3 pt-3">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-6">
+                        <p class="text-white ps-5">Copyright © Bruin 2022 . All rights reserved.</p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <div class="row social-icons pe-5">
+                            <div class="footer-icon mx-2">
+                                <i class="fab fa-facebook-f text-light"></i>
+                            </div>
+                            <div class="footer-icon mx-2">
+                                <i class="fab fa-twitter text-light"></i>
+                            </div>
+                            <div class="footer-icon mx-2">
+                                <i class="fab fa-instagram text-light"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <!-- End of Footer Section -->
+
+
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
