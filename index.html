@@ -23,10 +23,11 @@
 
 
 <body>
-    <section class="container-fluid px-0" id="mainwrapper">
+    <!-- <section class="container-fluid px-0" id="mainwrapper"> -->
         <!-- Header Section -->
-        <section class="container-fluid px-0 fixed-top" id="header" style="background-color:rgba(0,0,0,0.7)">
-            <section class="container px-0">
+        <header>
+        <section class="container-fluid px-0 fixed-top" id="header" style="background-color:rgba(0,0,0,0.7);">
+            <!-- <section class="container px-0"> -->
                 <nav class="navbar navbar-expand-lg navbar-dark px-5 py-2">
                     <div class="container-fluid">
                         <div class="container d-flex justify-content-between">
@@ -98,17 +99,18 @@
                     </div>
                 </nav>
             </section>
-        </section>
+        <!-- </section> -->
+        </header>
         <!-- End of Header Section -->
 
         <!-- Hero Section -->
-        <section class="container-fluid" id="hero">
+        <section class="container-fluid h-100" id="hero">
             <section class="row">
                 <div class="col-12 p-0">
                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                             <div class="carousel-item active position-relative">
-                                <img src="./images/slider-1.png" class="d-block w-100 h-100" alt="...">
+                                <img src="./images/slider-1.png" class="d-block w-100 h-100" alt="..." style="height: 100%;">
                                 <div class="overlay-black"></div>
                                 <div class="row d-none d-xl-flex">
                                     <div class="carousel-caption d-md-block text-start ps-5 col-6"
@@ -130,8 +132,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item position-relative">
-                                <img src="./images/slider-2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-item active position-relative">
+                                <img src="./images/slider-2.jpg" class="d-block w-100 h-100" alt="..." style="height: 100%;">
+                                <div class="overlay-black"></div>
+                                <div class="row d-none d-xl-flex">
+                                    <div class="carousel-caption d-md-block text-start ps-5 col-6"
+                                        style="width: 50%; bottom: 20%;left:10%">
+                                        <h4 class="fs-6">WELCOME TO BRUIN COFFEE</h4>
+                                        <h1 class="fs-1">Enjoy Your Morning Coffee Shot</h1>
+                                        <p>Donec vitae libero non enim placerat eleifend aliquam erat volutpat.
+                                            Curabitur
+                                            diam ex, dapibus purus sapien, cursus sed nisl tristique, commodo gravida
+                                            lectus
+                                            non.
+                                        </p>
+                                        <div class="row">
+                                            <button class="col-5 btn rounded text-light px-4 py-3 mx-4"
+                                                style="background-color: #6F3727;">BOOK A TABLE</button>
+                                            <button class="col-5 btn rounded  px-4 py-3"
+                                                style="background-color: #FFFFFF; color:#6F3727">VISIT OUR SHOP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="carousel-item position-relative">
+                                <img src="./images/slider-2.jpg" class="d-block w-100 h-100" alt="..." style="height: 100%;">
                                 <div class="overlay-black"></div>
                                 <div class="row d-none d-xl-flex">
                                     <div class="carousel-caption d-flex d-md-block text-start ps-5"
@@ -153,7 +178,7 @@
                                 <div class="row d-flex d-xl-none">
                                     <h1 class="text-light p-5">Welcome to Bruin Coffee</h1>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                             data-bs-slide="prev">
@@ -199,8 +224,8 @@
                 <section class="row g-3">
                     <div class="col-12 col-xl-6 d-flex justify-content-center align-items-center">
                         <div class="position-relative d-inline-block">
-                            <img src="./images/about_01.png" alt="Lady drinking coffee" class="img-fluid rounded">
-                            <img src="./images/about_02.png" alt="Cup" class="me-3 mb-3 img-fluid"
+                            <img src="./images/about_01.png" alt="Lady drinking coffee" class="img-fluid rounded px-5">
+                            <img src="./images/about_02.png" alt="Cup" class="me-3 mb-3 img-fluid w-50 w-xl-100"
                                 style="position: absolute;top:75%;left:50%">
                         </div>
                     </div>
@@ -1022,7 +1047,7 @@
 
 
 
-    </section>
+    <!-- </section> -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
